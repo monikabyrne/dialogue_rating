@@ -1,0 +1,70 @@
+Doctor,Patient,Intent,Session_ID,TimeStamp
+WELCOME,"DESCRIPTION
+Your patient, Amani Roberts, has been referred to you by her oncologist with her swallowing problems. She is 38 years old. She was recently treated for stage 2 hypopharyngeal cancer. Assess her condition and make a plan for appropriate follow-up action.
+
+Click here to interact with the patient",Task Description,Amani71069,12/05/2024 18:18
+"Kia ora, good morning Amani",Hi!,introduction.name_role,Amani71069,12/05/2024 18:19
+My name is xxx. I'm a  speech language therapist,Hi!,introduction.name_role,Amani71069,12/05/2024 18:19
+Your oncologist has referred you to me. Can you tell me a bit about what's been going on?,I've been having trouble swallowing. When I eat it feels like the food is sticking in the back of my throat. I have to swallow a lot to get it down and sometimes I think I'm choking. I have to drink a lot of water as well.,main_complaint.describe_problem,Amani71069,12/05/2024 18:20
+That must be a bit scary.,Yes,answer.yes,Amani71069,12/05/2024 18:21
+Do you have trouble drinking?,Drinking isn't really an issue. Sometimes I choke a little but nothing major. I've been drinking a lot of water because my mouth is so dry all the time.,main_complaint.swallowing_liquids,Amani71069,12/05/2024 18:21
+Do you have trouble with your saliva in your mouth?,"I’ve started carrying a water bottle around with me everywhere I go since radiation, because my mouth is so dry and sticky. It’s such an uncomfortable feeling having a super dry mouth. The water helps a bit.",main_complaint.dry_mouth,Amani71069,12/05/2024 18:21
+That's a good strategy,Yes,answer.yes,Amani71069,12/05/2024 18:22
+Have you seen a speech language therapist before?,I haven't seen anyone for my swallow. My oncologist asked me to see you about it.,main_complaint.swallowing_doctor,Amani71069,12/05/2024 18:23
+OK. Great.,Yes,answer.yes,Amani71069,12/05/2024 18:23
+So what food feels like it's sticking in your throat?,"If I take a bigger bite than normal or eat something tough, it feels like food gets stuck in the back of my throat. I have to swallow multiple times and drink water to get it down.",main_complaint.food_stuck,Amani71069,12/05/2024 18:23
+Are you on a special diet?,"I have to eat a lot of soft foods that are easier to swallow like soup or rice, or cooked vegetables. I can't eat red meat anymore or salad.",main_complaint.foods_easy_to_eat,Amani71069,12/05/2024 18:24
+Does this swallowing issue take away your enjoyment of feed?,No one else has had problems with swallowing.,main_complaint.family_history_of_swallowing_problems,Amani71069,12/05/2024 18:24
+So who do you live with?,My husband and I have two children. A boy who's 8 and a girl who's 5.,personal_social.family,Amani71069,12/05/2024 18:25
+Do you feel well supported at home?,It's been stressful going through cancer treatment. My husband has been very supportive. We try to not burden our kids with this and keep their routines as normal as possible.,personal_social.family_support,Amani71069,12/05/2024 18:25
+That sounds hard.,Yes,answer.yes,Amani71069,12/05/2024 18:25
+Do you smoke cigarettes?,I've never smoked in my life!,main_complaint.smoking,Amani71069,12/05/2024 18:26
+And how about alcohol>,I like to drink white wine sometimes at night to relax.,main_complaint.alcohol,Amani71069,12/05/2024 18:26
+Have you been in hospital recently?,I was hospitalised during surgery for cancer.,other.hospitalisation,Amani71069,12/05/2024 18:26
+Do you have any other conditions?,"Other than cancer, I have high blood pressure. The cancer is in remission now. Before the diagnosis I was relatively healthy. I had my adenoids removed when I was a kid but otherwise everything was fine.",other.conditions_other_than_cancer,Amani71069,12/05/2024 18:27
+OK great. Have you had pneumonia before?,I haven't had any infections recently.,other.sickness,Amani71069,12/05/2024 18:27
+When was your cancer diagnosed?,I was diagnosed with stage 2 hypopharyngeal cancer 6 months ago. I had surgery and radiation and now the cancer is in remission.,cancer.diagnosis_treatment,Amani71069,12/05/2024 18:28
+Congratulation!,Hi!,introduction.name_role,Amani71069,12/05/2024 18:28
+How are you feeling about your swallowing?,I've been feeling pretty low. It's been so hard to swallow the last few months and I'm worried it won't get better plus I am in pain all the time.,personal_social.depression,Amani71069,12/05/2024 18:28
+"I'm sorry to heat that. That must be hard, especially with children at home.",My husband and I have two children. A boy who's 8 and a girl who's 5.,personal_social.family,Amani71069,12/05/2024 18:29
+Is it hard to swallow pills?,I can swallow my pills with some extra water.,main_complaint.swallowing_medication,Amani71069,12/05/2024 18:29
+Is there a time of day that swallowing is easier?,I have problems with my swallowing throughout the day.,main_complaint.swallowing_during_the_day,Amani71069,12/05/2024 18:30
+How do you eat meals at home?,I eat dinner with my husband and kids and lunch by myself. Usually something easy to eat so I don't choke when I'm alone.,main_complaint.help_eating,Amani71069,12/05/2024 18:30
+DO you go out to eat at all?,We just eat at home since the cancer. I've been avoiding going out to eat with friends. There is so much food I can't eat. I don't want people to see me in pain while I'm eating or to try to cheer me up. It's hard to feel optimistic when I can hardly eat.,personal_social.eating_out,Amani71069,12/05/2024 18:30
+How does your husband manage all this?,It's been stressful going through cancer treatment. My husband has been very supportive. We try to not burden our kids with this and keep their routines as normal as possible.,personal_social.family_support,Amani71069,12/05/2024 18:31
+Are you worried about the choking?,I’m very anxious I might choke. My mouth is so dry that food gets stuck in my mouth. Some days just the thought of eating gives me anxiety.,personal_social.mealtime_anxiety,Amani71069,12/05/2024 18:31
+That's hard - I'm sorry to hear it.,Thank you.,empathetic_responses_from_doctor,Amani71069,12/05/2024 18:32
+Does medication help?,Ibuprofen can help with the pain at least a little bit. Sertraline is helping with the stress. I also see a therapist. Megace seems to be working because I've gained some weight in the last two months. My blood pressure is fine on Diurin.,main_complaint.medications_do_they_work,Amani71069,12/05/2024 18:32
+That's a lot of medication,Ibuprofen can help with the pain at least a little bit. Sertraline is helping with the stress. I also see a therapist. Megace seems to be working because I've gained some weight in the last two months. My blood pressure is fine on Diurin.,main_complaint.medications_do_they_work,Amani71069,12/05/2024 18:32
+Did you lose some weight?,"Last I checked I weighed 52 kilos. I lost a lot of weight during treatment. I wasn't able to eat much at all. I'm on an appetite stimulant and it seems to be working. I've put on some weight. But I'm still not eating as much as I used to. To be honest, food doesn't taste the same to me now.",main_complaint.weight,Amani71069,12/05/2024 18:32
+Have you lost your pleasure in food?,Food tastes different since the radiation therapy so I haven't been that into eating recently. I used to get really excited when my husband was going to cook dinner. He's a fantastic cook but now I have to force myself to eat whatever he makes.,main_complaint.taste,Amani71069,12/05/2024 18:33
+DOes he do most of the cooking at the moment?,My husband cooks our dinners most of the time. He's taken over from me since the cancer treatment. I get the kids' lunchboxes ready and make lunch for myself during the day.,personal_social.cooking,Amani71069,12/05/2024 18:33
+Well done. Sounds like you are boht doing really well.,Okay,answer.okay,Amani71069,12/05/2024 18:34
+What do you want to achieve with me?,I would like to be able to swallow without pain and choking. It would be amazing if food tasted like it used to.,main_complaint.goals,Amani71069,12/05/2024 18:34
+Great - okay.,Yes,answer.yes,Amani71069,12/05/2024 18:35
+Have you had any assessment or examination of your swallow before?,I haven't had my swallowing tested.,main_complaint.swallowing_tests,Amani71069,12/05/2024 18:35
+I would like you have have an examination using a machine to see what is happening,"I'm not sure what that means exactly. Can you explain, please?",medical_jargon,Amani71069,12/05/2024 18:36
+We can look at your swallowing and see where the difficulty for your swallow is. Would you be willing to have this assessment done?,Okay. What will this involve?,treatment_plan.assessment,Amani71069,12/05/2024 18:37
+You will be awake and swallowing some food and liquid.,Drinking isn't really an issue. Sometimes I choke a little but nothing major. I've been drinking a lot of water because my mouth is so dry all the time.,main_complaint.swallowing_liquids,Amani71069,12/05/2024 18:38
+Are you better at different times of the day?,I have problems with my swallowing throughout the day.,main_complaint.swallowing_during_the_day,Amani71069,12/05/2024 18:38
+What are your main concerns?,My swallowing keeps getting worse and I am worried it will not get better.,main_complaint.most_concerning_issue,Amani71069,12/05/2024 18:40
+Do you not see improvement at the moment?,Okay. Thank you.,treatment_plan.response_swallowing_taste,Amani71069,12/05/2024 18:41
+How is your voice quality?,My voice sounds pretty much the same as before the treatment. Maybe a little hoarse. I don't have any problems with my speech.,main_complaint.voice_speech,Amani71069,12/05/2024 18:42
+Are you managing financially?,Food definitely tastes different since the radiation therapy. It's so disappointing when I eat my favourite foods and they taste wrong. And the pain when I swallow makes me want to skip meals altogether.,personal_social.coping,Amani71069,12/05/2024 18:43
+Do you skip many meals?,"I've been eating less because food tastes strange to me now. I have breakfast, lunch and dinner but my portions are much smaller than I used to eat. I can't eat much in one go because it's really painful.",main_complaint.number_of_meals,Amani71069,12/05/2024 18:43
+I'm sorry to hear that.,Thank you.,empathetic_responses_from_doctor,Amani71069,12/05/2024 18:44
+Do you see friends often?,"I’ve been feeling pretty low, so I’ve been avoiding meeting friends. I often feel like I'm not going to be good company. My therapist suggested I try and make an effort to socialise more.",personal_social.social_life,Amani71069,12/05/2024 18:44
+That is a good idea,Yes,answer.yes,Amani71069,12/05/2024 18:44
+What are you seeing your therapist for?,Seeing the therapist has helped me manage my stress. Sertraline helps too. Sometimes it's hard with the cancer and family stuff.,personal_social.depression_support,Amani71069,12/05/2024 18:44
+That's good that it helps,If food gets stuck I have to drink a lot of water and swallow a lot to get it down. I cough sometimes too when I swallow. It can help if I cut my food into small bites and avoid tougher foods.,main_complaint.what_helps_swallow,Amani71069,12/05/2024 18:46
+"Ok, so what size bites do you need to cut them into?",If food gets stuck I have to drink a lot of water and swallow a lot to get it down. I cough sometimes too when I swallow. It can help if I cut my food into small bites and avoid tougher foods.,main_complaint.what_helps_swallow,Amani71069,12/05/2024 18:46
+Does mealtime take longer?,It takes me much longer to eat food I have to chew even if I take small bites. Especially since I get so worried about having a choking fit and I end up eating way more slowly than I probably have to. If I eat something like soup I can eat pretty normally. My meals can take 30 to 40 minutes.,main_complaint.longer_mealtimes,Amani71069,12/05/2024 18:47
+That sounds like a long time.,Yes,answer.yes,Amani71069,12/05/2024 18:47
+Do you get tired?,I feel tired and weak when I haven't been able to eat for a while.,main_complaint.tiredness,Amani71069,12/05/2024 18:47
+"So you feel tired and weak from not eating, but eating also makes you tired",I feel tired and weak when I haven't been able to eat for a while.,main_complaint.tiredness,Amani71069,12/05/2024 18:48
+Do you often not eat?,I eat dinner with my husband and kids and lunch by myself. Usually something easy to eat so I don't choke when I'm alone.,main_complaint.help_eating,Amani71069,12/05/2024 18:48
+Do you get exhausted from eating?,I feel tired and weak when I haven't been able to eat for a while.,main_complaint.tiredness,Amani71069,12/05/2024 18:48
+Do you see people in the community?,I have regular oncology appointments and I see a psychologist.,main_complaint.other_health_professionals,Amani71069,12/05/2024 18:50
+What about visiting your children's school?,My husband and I have two children. A boy who's 8 and a girl who's 5.,personal_social.family,Amani71069,12/05/2024 18:51
+Do you feel like you can socialise at the moment?,"I’ve been feeling pretty low, so I’ve been avoiding meeting friends. I often feel like I'm not going to be good company. My therapist suggested I try and make an effort to socialise more.",personal_social.social_life,Amani71069,12/05/2024 18:51
+Goodbye,Goodbye,closing_remarks.bye,Amani71069,12/05/2024 18:51
